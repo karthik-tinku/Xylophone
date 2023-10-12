@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        body{ background-color: black;}
+        h1{ color: white;}
+        h1 {text-align: center;}
+        .pad{
+            padding: 0px 10px 15px 30px;
+        }
+        .mad{
+            padding: 0px 10px 33px 30px;
+        }
+        .mader{
+            padding: 0px 10px 50px 30px;
+        }
+        .jad{
+            padding: 0px 10px 65px 30px;
+        }
+        .apple{
+            padding: 0px 10px 78px 30px;
+        }
+        .mango{
+            padding: 0px 10px 93px 30px;
+        }
+        .goa{
+            padding: 0px 10px 110px 30px;
+        }
+        .mike{
+            padding: 0px 10px 125px 30px;
+        }
+        .nike{
+            padding: 0px 10px 145px 30px;
+        }
+        
+        
+  
+</style>;
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xylophone</title>
+</head>
+<body>
+    <h1>Virtual Xylophone</h1>
+    <br>
+    <img src="images\1.png" height="600"  id="image1" onclick="playSound('sound1.mp3')">
+    <img src="images\2.png" height="570"  class="pad" onclick="playSound('sound2.mp3')" >
+    <img src="images\3.png" height="530" class="mad" onclick="playSound('sound3.mp3')">
+    <img src="images\4.png" height="490" class="mader" onclick="playSound('sound4.mp3')">
+    <img src="images\5.png" height="450" class="jad" onclick="playSound('sound5.mp3')">
+    <img src="images\6.png" height="410" class="apple" onclick="playSound('sound6.mp3')">
+    <img src="images\7.png" height="375" class="mango" onclick="playSound('sound7.mp3')">
+    <img src="images\8.png" height="340" class="goa" onclick="playSound('sound8.mp3')">
+    <img src="images\9.png" height="300" class="mike" onclick="playSound('sound9.mp3')">
+    <img src="images\10.png" height="260" class="nike"onclick="playSound('sound10.mp3')">
+    <audio id="audio" preload="auto">
+        <source src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+         
+       function playSound(soundFile) {
+            var audio = document.getElementById('audio');
+            audio.src = soundFile;
+            audio.play();
+        }
+    
+
+        
+    </script>
+
+</body>
+</html>
